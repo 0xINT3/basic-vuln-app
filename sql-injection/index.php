@@ -10,7 +10,6 @@ if (strlen($_GET['id']) < 1) {
 } else {
   $query = $db->query('select * from secrets where id = ' . $_GET['id']);
   while ($row = $query->fetchArray()) {
-    echo $row['secret'];
   }
 }
 
